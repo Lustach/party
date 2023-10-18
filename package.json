@@ -12,7 +12,14 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "nuxt": "^3.7.4",
-    "vue": "^3.3.4",
-    "vue-router": "^4.2.5"
+    "sass": "^1.68.0",
+    "vite-svg-loader": "^4.0.0"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.11",
+    "pinia": "^2.1.6"
+  },
+  "overrides": {
+    "vue": "latest"
   }
 }
