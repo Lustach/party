@@ -38,9 +38,9 @@ const showMobileMenu = () => {
 };
 </script>
 
-<style scoped lang="scss">
+<style  lang="scss">
 header {
-  background-color: #262d34;
+  background-color: $orange;
   height: 80px;
   display: flex;
   /* justify-content: center; */

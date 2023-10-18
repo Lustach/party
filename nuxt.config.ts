@@ -6,7 +6,14 @@ export default defineNuxtConfig({
       svgLoader({
         /* ... */
       })
-    ]
+    ],
+    css:{
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "@/assets/colors.scss" as *;',
+        },
+      },
+    }
   },
   devtools: { enabled: true },
   modules: [
