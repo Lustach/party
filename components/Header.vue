@@ -1,13 +1,13 @@
 <template>
   <header>
-    Header
+    Logo
     <div class="menu-left__side">
       <UiSvg v-for="(e, i) in menu" v-bind="e" />
     </div>
     <div class="menu-right__side">
-      <UiSvg svg="bell-badge" />
-      <UiSvg svg="brightness" @click="toggleDarkMode()" />
-      <UiSvg svg="logout" />
+      <UiSvg svg="bell-badge" title="Уведомления"/>
+      <UiSvg svg="brightness" title="Цветовая тема" @click="toggleDarkMode()" />
+      <UiSvg svg="logout" title="Выйти"/>
       {{ isDark }} isDark {{ isDarkMode }} darkMode
     </div>
   </header>
@@ -23,14 +23,14 @@ const toggleDarkMode = () => {
 };
 const menu = ref([
   {
-    title: "Календарь",
-    svg: "calendar-month-outline",
+    title: "Главная",
+    svg: "home",
     link: "",
     f: "#fff",
   },
   {
-    title: "Главная",
-    svg: "home",
+    title: "Календарь",
+    svg: "calendar-month-outline",
     link: "",
     f: "#fff",
   },
