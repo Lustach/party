@@ -19,6 +19,5 @@ export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
     '@vueuse/nuxt',
-    'storybook-addon-nuxt'
   ],
 })
