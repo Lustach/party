@@ -8,39 +8,18 @@
 // import Calendar from "@/assets/svg/calendar-month-outline.svg?component";
 import Svg from "@/components/ui/SvgComponent.vue"
 const isMobileMenu = ref(false);
-const menu = ref([
-  {
-    name: "Проекты",
-    to: "#work",
-    toShow: true,
-  },
-  {
-    name: "Обо мне",
-    to: "#about_me",
-    toShow: true,
-  },
-  // {
-  //   name: 'Блог',
-  //   to: '#blog',
-  //   toShow: false,
-  // },
-  // {
-  //   name: 'Контакты',
-  //   to: '#contacts',
-  //   toShow: false,
-  // }
-]);
 const showMobileMenu = () => {
   // if (window.innerWidth <= 767) {
   //   isMobileMenu.value = !isMobileMenu.value;
   //   isMobileMenu.value ? setBodyOverflow() : deleteBodyOverflow();
   // }
 };
+const { x, y } = useMouse()
 </script>
 
 <style  lang="scss">
 header {
-  background-color: $orange;
+  background-color: $black-2;
   height: 80px;
   display: flex;
   /* justify-content: center; */
