@@ -53,11 +53,12 @@ const menu = ref([
 header {
   background-color: $black-2;
   color: $white;
-  height: 80px;
+  height: 64px;
   display: flex;
   /* justify-content: center; */
   align-items: center;
   padding: 20px 22px;
+  margin-bottom: 20px;
 }
 svg {
   height: 24px;
