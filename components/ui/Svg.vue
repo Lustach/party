@@ -1,8 +1,8 @@
 <template>
   <div :class="{ 'has-background': hasBg }">
     <component
-      v-if="tag"
       :is="tag"
+      v-if="tag"
       :style="{ height: h + 'px', width: w + 'px', fill: f }"
     ></component>
   </div>
@@ -37,7 +37,7 @@ const props = defineProps({
   },
 });
 
-let tag = shallowRef("");
+const tag = shallowRef("");
 
 // Note this: `@` or `~` wont work
 import(`../../assets/svg/${props.svg}.svg`).then((module) => {

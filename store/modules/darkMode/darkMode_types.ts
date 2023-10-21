@@ -1,18 +1,17 @@
-import type { _GettersTree } from 'pinia';
+import type { _GettersTree } from "pinia";
 
 export interface IDarkModeState {
-    isDarkMode: boolean
+  isDarkMode: boolean;
 }
 
-type TGetters = _GettersTree<IDarkModeState>
+type TGetters = _GettersTree<IDarkModeState>;
 
 export interface IDarkModeGetters extends TGetters {
-    getDarkMode: ()=> boolean
+  getDarkMode: () => boolean;
 }
 
-
-type T = Awaited<Promise<PromiseLike<void>>>
+// type T = Awaited<Promise<PromiseLike<void>>>;
 
 export interface IDarkModeActions {
-    toggleDarkMode: ()=>void
+  toggleDarkMode: () => void;
 }

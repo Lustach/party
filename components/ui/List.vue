@@ -1,6 +1,6 @@
 <template>
   <div class="card-container">
-    <div class="list-container" v-for="(e, i) in list">
+    <div v-for="(e, i) in list" :key="i" class="list-container">
       <UiSvg svg="home" class="list-icon" w="20" h="20" />
       <div class="list-info">
         <p class="info__title">{{ e.title }}</p>
@@ -17,7 +17,7 @@ type listItem = {
 type Props = {
   list: listItem[];
 };
-const props = defineProps<Props>();
+defineProps<Props>();
 </script>
 <style scoped lang="scss">
 .card-container {

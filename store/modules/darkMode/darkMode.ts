@@ -1,7 +1,16 @@
-import { defineStore } from 'pinia';
-import type { IDarkModeState, IDarkModeActions, IDarkModeGetters } from './darkMode_types'
+import { defineStore } from "pinia";
+import type {
+  IDarkModeState,
+  IDarkModeActions,
+  IDarkModeGetters,
+} from "./darkMode_types";
 
-export const useDarkModeStore = defineStore<string,IDarkModeState, IDarkModeGetters, IDarkModeActions>('darkMode', {
+export const useDarkModeStore = defineStore<
+  string,
+  IDarkModeState,
+  IDarkModeGetters,
+  IDarkModeActions
+>("darkMode", {
   state: () => ({
     isDarkMode: false,
   }),

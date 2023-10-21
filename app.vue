@@ -1,17 +1,19 @@
 <template>
-  <Header />
-  <main>
-    <UiSidebar />
-    <NuxtPage id="app" />
-    <UiAside />
-  </main>
+  <div>
+    <Header />
+    <main>
+      <UiSidebar />
+      <NuxtPage id="app" />
+      <UiAside />
+    </main>
+  </div>
 </template>
 <script setup lang="ts">
 import { useDarkModeStore } from "@/store/modules/darkMode/darkMode";
 const darkModeStore = useDarkModeStore();
 provide(
   "isDark",
-  computed(() => darkModeStore.getDarkMode)
+  computed(() => darkModeStore.getDarkMode),
 );
 </script>
 <style lang="scss">

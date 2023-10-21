@@ -1,5 +1,5 @@
-export default defineEventHandler((event)=>{
-    return{
-        word: "nuxt"
-    }
-})
+export default defineEventHandler(() => {
+  return {
+    word: "nuxt",
+  };
+});

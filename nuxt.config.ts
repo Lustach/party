@@ -1,23 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import svgLoader from 'vite-svg-loader'
+import svgLoader from "vite-svg-loader";
 export default defineNuxtConfig({
-  vite:{
+  vite: {
     plugins: [
       svgLoader({
         /* ... */
-      })
+      }),
     ],
-    css:{
+    css: {
       preprocessorOptions: {
         scss: {
           additionalData: '@use "@/assets/colors.scss" as *;',
         },
       },
-    }
+    },
   },
   devtools: { enabled: true },
-  modules: [
-    '@pinia/nuxt',
-    '@vueuse/nuxt',
-  ],
-})
+  modules: ["@pinia/nuxt", "@vueuse/nuxt", "@nuxtjs/eslint-module"],
+});

@@ -2,12 +2,12 @@
   <header>
     Logo
     <div class="menu-left__side">
-      <UiSvg v-for="(e, i) in menu" v-bind="e" />
+      <UiSvg v-for="(e, i) in menu" :key="i" v-bind="e" />
     </div>
     <div class="menu-right__side">
-      <UiSvg svg="bell-badge" title="Уведомления"/>
+      <UiSvg svg="bell-badge" title="Уведомления" />
       <UiSvg svg="brightness" title="Цветовая тема" @click="toggleDarkMode()" />
-      <UiSvg svg="logout" title="Выйти"/>
+      <UiSvg svg="logout" title="Выйти" />
       {{ isDark }} isDark {{ isDarkMode }} darkMode
     </div>
   </header>
