@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 import type {
   IDarkModeState,
   IDarkModeActions,
-  IDarkModeGetters,
+  IDarkModeGetters
 } from "./darkMode_types";
 
 export const useDarkModeStore = defineStore<
@@ -12,16 +12,16 @@ export const useDarkModeStore = defineStore<
   IDarkModeActions
 >("darkMode", {
   state: () => ({
-    isDarkMode: false,
+    isDarkMode: false
   }),
   actions: {
     toggleDarkMode() {
       this.isDarkMode = !this.isDarkMode;
-    },
+    }
   },
   getters: {
     getDarkMode() {
       return this.isDarkMode;
-    },
-  },
+    }
+  }
 });

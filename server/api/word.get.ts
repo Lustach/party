@@ -1,5 +1,5 @@
 export default defineEventHandler(() => {
   return {
-    word: "nuxt",
+    word: "nuxt"
   };
 });

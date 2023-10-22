@@ -5,16 +5,16 @@ export default defineNuxtConfig({
     plugins: [
       svgLoader({
         /* ... */
-      }),
+      })
     ],
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "@/assets/colors.scss" as *;',
-        },
-      },
-    },
+          additionalData: "@use \"@/assets/colors.scss\" as *;"
+        }
+      }
+    }
   },
   devtools: { enabled: true },
-  modules: ["@pinia/nuxt", "@vueuse/nuxt", "@nuxtjs/eslint-module"],
+  modules: ["@pinia/nuxt", "@vueuse/nuxt", "@nuxtjs/eslint-module"]
 });

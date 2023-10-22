@@ -13,7 +13,7 @@ import { useDarkModeStore } from "@/store/modules/darkMode/darkMode";
 const darkModeStore = useDarkModeStore();
 provide(
   "isDark",
-  computed(() => darkModeStore.getDarkMode),
+  computed(() => darkModeStore.getDarkMode)
 );
 </script>
 <style lang="scss">

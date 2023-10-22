@@ -26,26 +26,26 @@ const menu = ref([
     title: "Главная",
     svg: "home",
     link: "",
-    f: "#fff",
+    f: "#fff"
   },
   {
     title: "Календарь",
     svg: "calendar-month-outline",
     link: "",
-    f: "#fff",
+    f: "#fff"
   },
   {
     title: "Обучение",
     svg: "school-outline",
     link: "",
-    f: "#fff",
+    f: "#fff"
   },
   {
     title: "Обсуждения",
     svg: "comment-multiple",
     link: "",
-    f: "#fff",
-  },
+    f: "#fff"
+  }
 ]);
 </script>
 

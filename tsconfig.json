@@ -5,6 +5,6 @@
     "/stories"
   ],
   "compilerOptions": {
-    "outDir": "./output",
-  },
+    "outDir": "./output"
+  }
 }

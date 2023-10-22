@@ -4,7 +4,7 @@
       :is="tag"
       v-if="tag"
       :style="{ height: h + 'px', width: w + 'px', fill: f }"
-    ></component>
+    />
   </div>
 </template>
 
@@ -13,28 +13,28 @@ import { shallowRef } from "vue";
 const props = defineProps({
   svg: {
     type: String,
-    required: true,
+    required: true
   },
   w: {
     type: String,
     required: false,
-    default: "30",
+    default: "30"
   },
   h: {
     type: String,
     required: false,
-    default: "30",
+    default: "30"
   },
   f: {
     type: String,
     required: false,
-    default: "#fff",
+    default: "#fff"
   },
   hasBg: {
     type: Boolean,
     required: false,
-    default: true,
-  },
+    default: true
+  }
 });
 
 const tag = shallowRef("");

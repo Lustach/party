@@ -3,8 +3,12 @@
     <div v-for="(e, i) in list" :key="i" class="list-container">
       <UiSvg svg="home" class="list-icon" w="20" h="20" />
       <div class="list-info">
-        <p class="info__title">{{ e.title }}</p>
-        <p class="info__description">{{ e.description }}</p>
+        <p class="info__title">
+          {{ e.title }}
+        </p>
+        <p class="info__description">
+          {{ e.description }}
+        </p>
       </div>
     </div>
   </div>

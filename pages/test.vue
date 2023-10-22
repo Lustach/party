@@ -1,3 +1,5 @@
 <template>
-  <div class="container">test</div>
+  <div class="container">
+    test
+  </div>
 </template>

@@ -11,12 +11,12 @@ const list = [
   { title: "Newest and Recent", description: "Find the latest update" },
   {
     title: "Popular of the day",
-    description: "Shots featured today by curators",
+    description: "Shots featured today by curators"
   },
   {
     title: "Following",
-    description: "Explore from your favorite person",
-  },
+    description: "Explore from your favorite person"
+  }
 ];
 </script>
 <style scoped lang="scss">
