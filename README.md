@@ -1,5 +1,7 @@
 # Project notes
-
+Был добавлен пакет 
+    "ajv": "^8.12.0",
+для фикса ошибки.
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup

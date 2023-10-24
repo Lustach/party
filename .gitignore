@@ -25,6 +25,3 @@ logs
 /test-results/
 /playwright-report/
 /playwright/.cache/
-
-.storybook
-stories

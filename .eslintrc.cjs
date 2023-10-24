@@ -10,6 +10,7 @@ module.exports = {
   },
   extends: ["@nuxtjs/eslint-config-typescript"],
   plugins: [],
+  // ignorePatterns: ["stories/*"], exclude folders
   rules: {
     quotes: ["error", "double"],
     semi: "off",
@@ -21,6 +22,10 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": "warn",
     "vue/v-on-style": "off",
     "vue/require-default-prop": 0,
+    "vue/v-on-event-hyphenation": ["error", "never", {
+      autofix: false,
+      ignore: []
+    }],
     // "comma-dangle": [
     //   "error",
     //   {
