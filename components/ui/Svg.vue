@@ -43,6 +43,7 @@ const tag = shallowRef("");
 import(`../../assets/svg/${props.svg}.svg`).then((module) => {
   tag.value = module.default;
 });
+
 </script>
 <style scoped lang="scss">
 .has-background {

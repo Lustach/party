@@ -2,7 +2,23 @@
   <header>
     Logo
     <div class="menu-left__side">
-      <UiSvg v-for="(e, i) in menu" :key="i" v-bind="e" />
+      <NuxtLink v-for="(e, i) in menu" :key="i" :to="e.to">
+        <UiSvg v-bind="e" />
+      </NuxtLink>
+    </div>
+    <div style="max-width: 440px;width: 100%;margin: 10px;">
+      <Input
+        id="input"
+        v-model="customFirst"
+        class="input-mini"
+        type="text"
+        spellcheck="false"
+        label="label123"
+        placeholder="placeholder"
+        :with-copy="true"
+        style="width: 100%;"
+        @blur="setCustomPath"
+      />
     </div>
     <div class="menu-right__side">
       <UiSvg svg="bell-badge" title="Уведомления" />
@@ -14,7 +30,14 @@
 </template>
 
 <script setup lang="ts">
+import Input from "@/components/ui/Input/Input.vue";
 import { useDarkModeStore } from "@/store/modules/darkMode/darkMode";
+
+const setCustomPath = (e: string) => {
+  console.log(e)
+}
+const customFirst = ref("")
+
 const darkModeStore = useDarkModeStore();
 const isDarkMode = computed(() => darkModeStore.getDarkMode);
 const isDark = inject("isDark");
@@ -25,31 +48,31 @@ const menu = ref([
   {
     title: "Главная",
     svg: "home",
-    link: "",
+    to: "/test",
     f: "#fff"
   },
   {
     title: "Календарь",
     svg: "calendar-month-outline",
-    link: "",
+    to: "/calendar",
     f: "#fff"
   },
   {
     title: "Обучение",
     svg: "school-outline",
-    link: "",
+    to: "/education",
     f: "#fff"
   },
   {
     title: "Обсуждения",
     svg: "comment-multiple",
-    link: "",
+    to: "/discussion",
     f: "#fff"
   }
 ]);
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 header {
   background-color: $black-2;
   color: $white;
@@ -72,5 +95,16 @@ svg {
 }
 .menu-right__side {
   justify-content: flex-end;
+}
+/* .menu-left__side{
+  width: auto;
+} */
+a.router-link-active {
+  font-weight: bold;
+  fill: red;
+}
+/* exact link will show the primary color for only the exact matching link */
+a.router-link-exact-active div {
+  background: $orange;
 }
 </style>
