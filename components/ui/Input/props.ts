@@ -2,7 +2,7 @@
 export interface Props {
   // data
   id: string
-  label: string
+  label?: string
   placeholder: string
   autofocus?: boolean
   type?: string

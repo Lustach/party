@@ -6,17 +6,17 @@
         <UiSvg v-bind="e" />
       </NuxtLink>
     </div>
-    <div style="max-width: 440px;width: 100%;margin: 10px;">
+    <div style="max-width: 440px;width: 100%;margin: 10px;height: 40px;">
       <Input
         id="input"
         v-model="customFirst"
         class="input-mini"
         type="text"
         spellcheck="false"
-        label="label123"
-        placeholder="placeholder"
+        placeholder="Поиск..."
         :with-copy="true"
         style="width: 100%;"
+        icon="magnify"
         @blur="setCustomPath"
       />
     </div>

@@ -3,7 +3,6 @@
     height: 100%;
     display: flex;
     position: relative;
-  
     &.noIcon {
       input {
         padding-left: 12px;
@@ -41,11 +40,14 @@
     & input {
       width: 100%;
       height: 100%;
-      border: 1px solid $light-blue;
+      // border: 1px solid $light-blue;
+      border: none;
       border-radius: 8px;
-      padding: 28px 50px 10px 36px;
+      padding: 9px 20px 9px 20px;
       font-size: 14px;
       line-height: 17px;
+      background-color: #2C353D;
+      color: $gray;
       // font-family: "Panton_SemiBold";
       // @include laptop {
       //   &#walletSearch {
@@ -65,7 +67,7 @@
       }
   
       &:focus {
-        border: 1px solid $blue;
+        border: 1px solid $dark-gray;
       }
   
       &:disabled {
@@ -83,11 +85,12 @@
     }
   
     &__icon {
-      max-width: 14px;
-      max-height: 16px;
-      left: 17px;
-      bottom: 20px;
+      max-width: 24px;
+      max-height: 24px;
       position: absolute;
+      right: 20px;
+      bottom: 8px;
+      fill: $gray;
   
       &--disabled {
         fill: $violet !important;
@@ -108,9 +111,9 @@
       height: 20px;
       cursor: pointer;
       position: absolute;
-  
+      fill: $gray;
       &:hover {
-        fill: $blue;
+        fill: $light-gray;
       }
     }
   
@@ -233,7 +236,7 @@
       border: 1px solid $orange !important;
   
       &:focus {
-        border: 1px solid $blue;
+        border: 1px solid $dark-gray;
       }
     }
   }
@@ -248,7 +251,7 @@
       &:focus {
         border-radius: 0;
         border: none;
-        border-bottom: 1px solid $blue;
+        border-bottom: 1px solid $dark-gray;
       }
     }
   

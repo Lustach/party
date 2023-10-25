@@ -90,7 +90,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch, nextTick, onMounted } from "vue"
+import { computed, shallowRef, ref, watch, nextTick, onMounted } from "vue"
 import { useClipboard } from "@vueuse/core"
 import type { Props } from "./props"
 import IconInfo from "~/assets/svg/information-outline.svg"
@@ -106,7 +106,7 @@ const emit = defineEmits(["update:modelValue", "focus", "blur", "input", "clear"
 const { copy } = useClipboard()
 
 const valueRef = ref("")
-const currentIcon = ref()
+const currentIcon = shallowRef()
 const focusFlag = ref(false)
 const hide = ref(false)
 const isCopied = ref(false)
@@ -120,11 +120,11 @@ const textWidth = ref(0)
 const inputPaddingLeft = ref(0)
 const inputWidth = ref(0)
 
-// if (props.icon) {
-//   import(`@/assets/icons/input/${props.icon}.svg`).then((val) => {
-//     currentIcon.value = markRaw(val.default)
-//   })
-// }
+if (props.icon) {
+  import(`../../../assets/svg/input/${props.icon}.svg`).then((val) => {
+    currentIcon.value = markRaw(val.default)
+  })
+}
 
 const inputType = computed(() => {
   if (props.type === "password") {
