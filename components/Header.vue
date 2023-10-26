@@ -24,7 +24,7 @@
       <UiSvg svg="bell-badge" title="Уведомления" />
       <UiSvg svg="brightness" title="Цветовая тема" @click="toggleDarkMode()" />
       <UiSvg svg="logout" title="Выйти" />
-      {{ isDark }} isDark {{ isDarkMode }} darkMode
+      <!-- {{ isDark }} isDark {{ isDarkMode }} darkMode -->
     </div>
   </header>
 </template>
@@ -95,6 +95,11 @@ svg {
 }
 .menu-right__side {
   justify-content: flex-end;
+}
+.menu-left__side {
+  &:first-child{
+    margin-left: 40px;
+  }
 }
 /* .menu-left__side{
   width: auto;

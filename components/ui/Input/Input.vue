@@ -96,7 +96,7 @@ import type { Props } from "./props"
 import IconInfo from "~/assets/svg/information-outline.svg"
 import IconCopy from "~/assets/svg/input/content-copy.svg"
 import IconHide from "~/assets/svg/input/eye-off-outline.svg"
-import IconShow from "~/assets/svg/input/eye-outline.svg"
+import IconShow from "~/assets/svg/eye-outline.svg"
 import IconError from "~/assets/svg/input/alert-error.svg"
 import IconClose from "~/assets/svg/close-circle-outline.svg"
 // import copyToClipboard from '@/helpers/copyToClipboard'

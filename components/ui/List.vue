@@ -1,7 +1,7 @@
 <template>
   <div class="card-container">
     <div v-for="(e, i) in list" :key="i" class="list-container">
-      <UiSvg svg="home" class="list-icon" w="20" h="20" />
+      <UiSvg svg="home" class="list-icon" :has-bg="false" />
       <div class="list-info">
         <p class="info__title">
           {{ e.title }}
