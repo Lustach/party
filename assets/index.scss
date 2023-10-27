@@ -26,7 +26,16 @@ body {
   //     transition: all 0.3s ease;
   // }
 }
-
+svg {
+  max-width: 24px;
+  width: 100%;
+  height: 24px;
+  fill: $gray-2;
+  cursor: pointer;
+  &:hover {
+    fill: $light-gray-3;
+  }
+}
 a {
   text-decoration: none;
   &:hover,

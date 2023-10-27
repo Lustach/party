@@ -3,6 +3,7 @@
   <main>
     <NuxtPage id="app" />
   </main>
+  <UiAlert v-show="alert" type="info" title="title title" @close="closeAlert" />
 </template>
 <script setup lang="ts">
 import { useDarkModeStore } from "@/store/modules/darkMode/darkMode";
@@ -11,6 +12,10 @@ provide(
   "isDark",
   computed(() => darkModeStore.getDarkMode)
 );
+const alert = ref(true);
+const closeAlert = () => {
+  alert.value = false;
+};
 </script>
 <style lang="scss">
 @import "@/assets/index.scss";
