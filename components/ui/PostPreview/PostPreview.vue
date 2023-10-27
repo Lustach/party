@@ -1,26 +1,24 @@
 <template>
   <div class="post-container">
-    <div>
-      <h2 class="title">
-        Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок
-      </h2>
-      <div class="info-container">
-        <div class="tags">
-          <UiChip :labels="['Экономика']" />
-        </div>
-        <div class="actions">
-          <div class="profile">profileInfo</div>
-          <div class="actions-panel">
-            <p><span>2131</span><IconEye /></p>
-            <p><span>4412</span><IconArrowUp /></p>
-            <p><span>124</span><IconArrowDown /></p>
-            <p><span>124</span><IconComment /></p>
-            <p><span>1</span><IconGavel /></p>
-          </div>
+    <h2 class="title">
+      Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок
+      <IconBookmark />
+    </h2>
+    <div class="info-container">
+      <div class="tags">
+        <UiChip :labels="['Экономика']" />
+      </div>
+      <div class="actions">
+        <div class="profile">profileInfo</div>
+        <div class="actions-panel">
+          <p><span>2131</span><IconEye /></p>
+          <p><span>4412</span><IconArrowUp /></p>
+          <p><span>124</span><IconArrowDown /></p>
+          <p><span>124</span><IconComment /></p>
+          <p><span>1</span><IconGavel /></p>
         </div>
       </div>
     </div>
-    <IconBookmark style="margin-right: -20px; margin-top: -6px" />
   </div>
 </template>
 <script setup lang="ts">
@@ -36,6 +34,7 @@ import IconBookmark from "~/assets/svg/post-preview/bookmark-multiple-outline.sv
 <style lang="scss" scoped>
 .post-container {
   display: flex;
+  flex-direction: column;
   background: $black-2;
   padding: 20px 40px 20px 20px;
   height: 162px;
@@ -49,6 +48,9 @@ import IconBookmark from "~/assets/svg/post-preview/bookmark-multiple-outline.sv
 .title {
   font-size: 18px;
   margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .tags {
   margin-bottom: 8px;

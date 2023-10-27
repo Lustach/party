@@ -48,7 +48,7 @@ const menu = ref([
   {
     title: "Главная",
     svg: "home",
-    to: "/test",
+    to: "/",
     f: "#fff"
   },
   {

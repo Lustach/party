@@ -1,12 +1,8 @@
 <template>
-  <div>
-    <Header />
-    <main>
-      <UiSidebar />
-      <NuxtPage id="app" />
-      <UiAside />
-    </main>
-  </div>
+  <Header />
+  <main>
+    <NuxtPage id="app" />
+  </main>
 </template>
 <script setup lang="ts">
 import { useDarkModeStore } from "@/store/modules/darkMode/darkMode";
@@ -19,7 +15,7 @@ provide(
 <style lang="scss">
 @import "@/assets/index.scss";
 #__nuxt {
-  height: calc(100vh);
+  min-height: calc(100vh);
   // - 64px
   background-color: $black-1;
 }

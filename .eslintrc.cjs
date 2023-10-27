@@ -26,6 +26,7 @@ module.exports = {
       autofix: false,
       ignore: []
     }],
+    "vue/no-multiple-template-root": 0,
     // "comma-dangle": [
     //   "error",
     //   {

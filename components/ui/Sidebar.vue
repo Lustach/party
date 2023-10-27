@@ -1,6 +1,5 @@
 <template>
   <div class="sidebar">
-    Sidebar
     <UiList :list="list" />
     <!-- <UiList title="Find the latest update" description="Find the latest update"/>
     <UiList title="Find the latest update" description="Find the latest update"/> -->
